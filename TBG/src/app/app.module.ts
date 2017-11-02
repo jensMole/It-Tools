@@ -9,6 +9,7 @@ import { VideoPage } from '../pages/video/video';
 import { AuthPage } from '../pages/auth/auth';
 import { AankondigingenPage } from '../pages/aankondigingen/aankondigingen';
 import { ChatPage } from '../pages/chat/chat';
+import { ContactPage } from '../pages/contact/contact';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -20,14 +21,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     VideoPage,
     AuthPage,
     AankondigingenPage,
-    ChatPage
+    ChatPage,
+    ContactPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
     IonicPageModule.forChild(AuthPage),
-    IonicPageModule.forChild(ChatPage),
-    IonicPageModule.forChild(AankondigingenPage),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -35,7 +35,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     VideoPage,
     AankondigingenPage,
-    ChatPage
+    ChatPage,
+    ContactPage
   ],
   providers: [
     StatusBar,

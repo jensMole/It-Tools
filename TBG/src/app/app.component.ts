@@ -8,6 +8,7 @@ import { VideoPage } from '../pages/video/video';
 import { AuthPage } from '../pages/auth/auth';
 import { AankondigingenPage } from '../pages/aankondigingen/aankondigingen';
 import { ChatPage } from '../pages/chat/chat';
+import { ContactPage } from '../pages/contact/contact';
 
 @Component({
   templateUrl: 'app.html'
@@ -28,6 +29,7 @@ export class MyApp {
       { title: "Video's", component: VideoPage },
       { title: 'Aankondigingen', component: AankondigingenPage },
       { title: 'Chat', component: ChatPage },
+      { title: 'Contact', component: ContactPage },
       { title: 'Auth', component: AuthPage }      
     ];
 
